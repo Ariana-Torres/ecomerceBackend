@@ -12,11 +12,14 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const menu_module_1 = require("./menu/menu.module");
 const countrys_module_1 = require("./countrys/countrys.module");
+const genero_module_1 = require("./genero/genero.module");
+const marca_module_1 = require("./marca/marca.module");
+const categorias_module_1 = require("./categorias/categorias.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [menu_module_1.MenuModule, countrys_module_1.CountrysModule],
+        imports: [menu_module_1.MenuModule, countrys_module_1.CountrysModule, genero_module_1.GeneroModule, marca_module_1.MarcaModule, categorias_module_1.CategoriasModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

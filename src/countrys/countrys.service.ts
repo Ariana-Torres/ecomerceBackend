@@ -3,7 +3,32 @@ import { CreateCountryDto } from './dto/create-country.dto';
 import { UpdateCountryDto } from './dto/update-country.dto';
 
 
-
+const db = [
+  {
+    id: 1,
+    name: 'Nicaragua',
+  },
+  {
+    id: 2,
+    name: 'Costa Rica',
+  },
+  {
+    id: 3,
+    name: 'Panama',
+  },
+  {
+    id: 4,
+    name: 'El Salvador',
+  },
+  {
+    id: 5,
+    name: 'Honduras',
+  },
+  {
+    id: 6,
+    name: 'Mexico',
+  }
+];
 @Injectable()
 export class CountrysService {
   create(createCountryDto: CreateCountryDto) {
@@ -11,7 +36,7 @@ export class CountrysService {
   }
 
   findAll() {
-    return `This action returns all countrys`;
+    return db;
   }
 
   findOne(id: number) {

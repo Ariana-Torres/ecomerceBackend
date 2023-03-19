@@ -6,53 +6,41 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CountrysService = void 0;
+exports.MarcaService = void 0;
 const common_1 = require("@nestjs/common");
 const db = [
     {
         id: 1,
-        name: 'Nicaragua',
+        name: 'Comidas',
     },
     {
         id: 2,
-        name: 'Costa Rica',
+        name: 'Zapatos',
     },
     {
         id: 3,
-        name: 'Panama',
+        name: 'Mariscos',
     },
-    {
-        id: 4,
-        name: 'El Salvador',
-    },
-    {
-        id: 5,
-        name: 'Honduras',
-    },
-    {
-        id: 6,
-        name: 'Mexico',
-    }
 ];
-let CountrysService = class CountrysService {
-    create(createCountryDto) {
-        return 'This action adds a new country';
+let MarcaService = class MarcaService {
+    create(createMarcaDto) {
+        return 'This action adds a new marca';
     }
     findAll() {
         return db;
     }
     findOne(id) {
-        return `This action returns a #${id} country`;
+        return `This action returns a #${id} marca`;
     }
-    update(id, updateCountryDto) {
-        return `This action updates a #${id} country`;
+    update(id, updateMarcaDto) {
+        return `This action updates a #${id} marca`;
     }
     remove(id) {
-        return `This action removes a #${id} country`;
+        return `This action removes a #${id} marca`;
     }
 };
-CountrysService = __decorate([
+MarcaService = __decorate([
     (0, common_1.Injectable)()
-], CountrysService);
-exports.CountrysService = CountrysService;
-//# sourceMappingURL=countrys.service.js.map
+], MarcaService);
+exports.MarcaService = MarcaService;
+//# sourceMappingURL=marca.service.js.map

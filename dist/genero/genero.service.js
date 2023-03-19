@@ -6,53 +6,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CountrysService = void 0;
+exports.GeneroService = void 0;
 const common_1 = require("@nestjs/common");
 const db = [
     {
         id: 1,
-        name: 'Nicaragua',
+        name: 'Masculino',
     },
     {
         id: 2,
-        name: 'Costa Rica',
+        name: 'Femenino',
     },
-    {
-        id: 3,
-        name: 'Panama',
-    },
-    {
-        id: 4,
-        name: 'El Salvador',
-    },
-    {
-        id: 5,
-        name: 'Honduras',
-    },
-    {
-        id: 6,
-        name: 'Mexico',
-    }
 ];
-let CountrysService = class CountrysService {
-    create(createCountryDto) {
-        return 'This action adds a new country';
+let GeneroService = class GeneroService {
+    create(createGeneroDto) {
+        return 'This action adds a new genero';
     }
     findAll() {
         return db;
     }
     findOne(id) {
-        return `This action returns a #${id} country`;
+        return `This action returns a #${id} genero`;
     }
-    update(id, updateCountryDto) {
-        return `This action updates a #${id} country`;
+    update(id, updateGeneroDto) {
+        return `This action updates a #${id} genero`;
     }
     remove(id) {
-        return `This action removes a #${id} country`;
+        return `This action removes a #${id} genero`;
     }
 };
-CountrysService = __decorate([
+GeneroService = __decorate([
     (0, common_1.Injectable)()
-], CountrysService);
-exports.CountrysService = CountrysService;
-//# sourceMappingURL=countrys.service.js.map
+], GeneroService);
+exports.GeneroService = GeneroService;
+//# sourceMappingURL=genero.service.js.map
