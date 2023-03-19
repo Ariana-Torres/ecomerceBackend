@@ -5,7 +5,10 @@ export declare class CategoriasController {
     private readonly categoriasService;
     constructor(categoriasService: CategoriasService);
     create(createCategoriaDto: CreateCategoriaDto): string;
-    findAll(): string;
+    findAll(): {
+        id: number;
+        name: string;
+    }[];
     findOne(id: string): string;
     update(id: string, updateCategoriaDto: UpdateCategoriaDto): string;
     remove(id: string): string;

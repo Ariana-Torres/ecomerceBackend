@@ -5,20 +5,16 @@ import { UpdateCategoriaDto } from './dto/update-categoria.dto';
 const db = [
   {
     id: 1,
-    name: 'Levi',
+    name: 'Comida',
   },
   {
     id: 2,
-    name: 'Gucci',
+    name: 'Bebidas',
   },
   {
     id: 3,
-    name: 'Prada',
+    name: 'Zapatos',
   },
-  {
-    id: 4,
-    name: 'Versace',
-  }
 ];
 
 @Injectable()
@@ -28,7 +24,7 @@ export class CategoriasService {
   }
 
   findAll() {
-    return `This action returns all categorias`;
+    return db;
   }
 
   findOne(id: number) {

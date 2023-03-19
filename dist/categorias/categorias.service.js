@@ -11,27 +11,23 @@ const common_1 = require("@nestjs/common");
 const db = [
     {
         id: 1,
-        name: 'Levi',
+        name: 'Comida',
     },
     {
         id: 2,
-        name: 'Gucci',
+        name: 'Bebidas',
     },
     {
         id: 3,
-        name: 'Prada',
+        name: 'Zapatos',
     },
-    {
-        id: 4,
-        name: 'Versace',
-    }
 ];
 let CategoriasService = class CategoriasService {
     create(createCategoriaDto) {
         return 'This action adds a new categoria';
     }
     findAll() {
-        return `This action returns all categorias`;
+        return db;
     }
     findOne(id) {
         return `This action returns a #${id} categoria`;
